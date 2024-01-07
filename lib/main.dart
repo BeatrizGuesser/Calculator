@@ -24,50 +24,112 @@ class _MyAppState extends State<MyApp> {
         body: const Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text('Coluna 1'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(
+                  'Número',
+                  style: TextStyle(fontSize: 72),
+                )
+              ],
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('AC'),
+                Text(
+                  'AC',
+                  style: TextStyle(fontSize: 48),
+                ),
                 Text(''),
                 Text(''),
-                Text('<X'),
+                Text(
+                  '<X',
+                  style: TextStyle(fontSize: 48),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('7'),
-                Text('8'),
-                Text('9'),
-                Text('/'),
+                Text(
+                  '7',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '8',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '9',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '/',
+                  style: TextStyle(fontSize: 48),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('4'),
-                Text('5'),
-                Text('6'),
-                Text('X'),
+                Text(
+                  '4',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '5',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '6',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  'X',
+                  style: TextStyle(fontSize: 48),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('1'),
-                Text('2'),
-                Text('3'),
-                Text('-'),
+                Text(
+                  '1',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '2',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '3',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '-',
+                  style: TextStyle(fontSize: 48),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text('0'),
-                Text(','),
-                Text('='),
-                Text('+'),
+                Text(
+                  '0',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  ',',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '=',
+                  style: TextStyle(fontSize: 48),
+                ),
+                Text(
+                  '+',
+                  style: TextStyle(fontSize: 48),
+                ),
               ],
             ),
             Text('Coluna 6'),
