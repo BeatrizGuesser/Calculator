@@ -21,6 +21,49 @@ class _MyAppState extends State<MyApp> {
             child: Text('Calculadora'),
           ),
         ),
+        body: const Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Text('Coluna 1'),
+            Text('Coluna 2'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text('7'),
+                Text('8'),
+                Text('9'),
+                Text('/'),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text('4'),
+                Text('5'),
+                Text('6'),
+                Text('X'),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text('1'),
+                Text('2'),
+                Text('3'),
+                Text('-'),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text('0'),
+                Text(','),
+                Text('='),
+                Text('+'),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
