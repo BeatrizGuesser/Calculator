@@ -25,7 +25,15 @@ class _MyAppState extends State<MyApp> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text('Coluna 1'),
-            Text('Coluna 2'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text('AC'),
+                Text(''),
+                Text(''),
+                Text('<X'),
+              ],
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -62,6 +70,7 @@ class _MyAppState extends State<MyApp> {
                 Text('+'),
               ],
             ),
+            Text('Coluna 6'),
           ],
         ),
       ),
