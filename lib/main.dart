@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -12,100 +12,113 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String numero = 'Número';
+  String numero = '0';
+
+  double primeiroNumero = 0.0;
+
+  String operacao = '';
 
   void calcular(String tecla) {
     switch (tecla) {
       case '0':
-        setState(() {
-          numero += tecla;
-        });
-        break;
+      // setState(() {
+      //   numero += tecla;
+      //   double numeroDouble = double.parse(numero);
+      //   numero = numeroDouble.toString();
+      // });
       case '1':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '2':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '3':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '4':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '5':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '6':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '7':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '8':
-        setState(() {
-          numero += tecla;
-        });
-        break;
       case '9':
+      case ',':
         setState(() {
           numero += tecla;
+          numero = numero.replaceAll(',', '.');
+          if (numero.contains('.')) {
+            // double numeroDouble = double.parse(numero);
+            // numero = numeroDouble.toString();
+          } else {
+            int numeroInt = int.parse(numero);
+            numero = numeroInt.toString();
+          }
+          numero = numero.replaceAll('.', ',');
         });
         break;
+
+      case '+':
+      case '-':
+      case 'X':
+      case '/':
+        operacao = tecla;
+        numero = numero.replaceAll(',', '.');
+        primeiroNumero = double.parse(numero);
+        numero = numero.replaceAll('.', ',');
+        numero = '0';
+        break;
+
+      case '=':
+        double resultado = 0.0;
+
+        if (operacao == '/') {
+          if (double.parse(numero) * 1 == 0) {
+            print('ERRO: divisão por zero');
+            return;
+          }
+        }
+
+        if (operacao == '+') {
+          resultado = primeiroNumero + double.parse(numero);
+        }
+
+        if (operacao == '-') {
+          resultado = primeiroNumero - double.parse(numero);
+        }
+
+        if (operacao == 'X') {
+          resultado = primeiroNumero * double.parse(numero);
+        }
+
+        if (operacao == '/') {
+          resultado = primeiroNumero / double.parse(numero);
+        }
+
+        String resultadoString = resultado.toString();
+        // 3
+        // parte1 = 3, parte2 = 0
+
+        List<String> resultadoPartes = resultadoString.split('.');
+
+        if (int.parse(resultadoPartes[1]) * 1 == 0) {
+          setState(() {
+            numero = int.parse(resultadoPartes[0]).toString();
+          });
+        } else {
+          setState(() {
+            numero = resultado.toString();
+          });
+        }
+
+        break;
+
       case 'AC':
         setState(() {
           numero = '0';
         });
         break;
+
       case '<X':
         setState(() {
-          numero = '<X';
+          if (numero.length > 0) {
+            numero = numero.substring(0, numero.length - 1);
+          }
         });
         break;
-      case '/':
-        setState(() {
-          numero = '/';
-        });
-        break;
-      case 'X':
-        setState(() {
-          numero = 'X';
-        });
-        break;
-      case '-':
-        setState(() {
-          numero = '-';
-        });
-        break;
-      case '+':
-        setState(() {
-          numero = '+';
-        });
-        break;
-      case '=':
-        setState(() {
-          numero = '=';
-        });
-        break;
-      case ',':
-        setState(() {
-          numero = ',';
-        });
-        break;
+
       default:
         numero += tecla;
         break;
