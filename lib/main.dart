@@ -135,7 +135,8 @@ class _MyAppState extends State<MyApp> {
           title: const Center(
             child: Text(
               'Calculadora',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
           ),
         ),
@@ -156,18 +157,18 @@ class _MyAppState extends State<MyApp> {
               children: [
                 GestureDetector(
                   onTap: () => calcular('AC'),
-                  child: const Text(
-                    'AC',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/iconsclear.png',
+                    width: 80,
                   ),
                 ),
-                const Text(''),
-                const Text(''),
+                const Text('               '),
+                const Text('               '),
                 GestureDetector(
                   onTap: () => calcular('<X'),
                   child: Image.asset(
-                    'assets/images/arrow.png',
-                    width: 72,
+                    'assets/images/iconsseta.png',
+                    width: 80,
                   ),
                 ),
               ],
@@ -179,30 +180,30 @@ class _MyAppState extends State<MyApp> {
                   onTap: () {
                     calcular('7');
                   },
-                  child: const Text(
-                    '7',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons7.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('8'),
-                  child: const Text(
-                    '8',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons8.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('9'),
-                  child: const Text(
-                    '9',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons9.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('/'),
-                  child: const Text(
-                    '/',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/iconsdiv.png',
+                    width: 80,
                   ),
                 ),
               ],
@@ -212,30 +213,30 @@ class _MyAppState extends State<MyApp> {
               children: [
                 GestureDetector(
                   onTap: () => calcular('4'),
-                  child: const Text(
-                    '4',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons4.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('5'),
-                  child: const Text(
-                    '5',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons5.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('6'),
-                  child: const Text(
-                    '6',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons6.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('X'),
-                  child: const Text(
-                    'X',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/iconsmulti.png',
+                    width: 80,
                   ),
                 ),
               ],
@@ -245,30 +246,30 @@ class _MyAppState extends State<MyApp> {
               children: [
                 GestureDetector(
                   onTap: () => calcular('1'),
-                  child: const Text(
-                    '1',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/numeroum.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('2'),
-                  child: const Text(
-                    '2',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons2.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('3'),
-                  child: const Text(
-                    '3',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons3.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('-'),
-                  child: const Text(
-                    '-',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/iconsmenos.png',
+                    width: 80,
                   ),
                 ),
               ],
@@ -278,30 +279,30 @@ class _MyAppState extends State<MyApp> {
               children: [
                 GestureDetector(
                   onTap: () => calcular('0'),
-                  child: const Text(
-                    '0',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/icons0.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular(','),
-                  child: const Text(
-                    ',',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/iconsvir.png',
+                    width: 65,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('='),
-                  child: const Text(
-                    '=',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/iconsigual.png',
+                    width: 80,
                   ),
                 ),
                 GestureDetector(
                   onTap: () => calcular('+'),
-                  child: const Text(
-                    '+',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/iconssoma.png',
+                    width: 80,
                   ),
                 ),
               ],

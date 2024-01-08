@@ -65,6 +65,24 @@ flutter:
 
   assets:
     - assets/images/arrow.png
+    - assets/images/icons0.png
+    - assets/images/icons2.png
+    - assets/images/icons3.png
+    - assets/images/icons4.png
+    - assets/images/icons5.png
+    - assets/images/icons6.png
+    - assets/images/icons7.png
+    - assets/images/icons8.png
+    - assets/images/icons9.png
+    - assets/images/iconsclear.png
+    - assets/images/iconsdiv.png
+    - assets/images/iconsigual.png
+    - assets/images/iconsmenos.png
+    - assets/images/iconsmulti.png
+    - assets/images/iconsseta.png
+    - assets/images/iconssoma.png
+    - assets/images/iconsvir.png
+    - assets/images/numeroum.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
