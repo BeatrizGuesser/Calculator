@@ -129,9 +129,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 195, 131, 207),
         appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 195, 131, 207),
           title: const Center(
-            child: Text('Calculadora'),
+            child: Text(
+              'Calculadora',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
         ),
         body: Column(
@@ -160,9 +165,9 @@ class _MyAppState extends State<MyApp> {
                 const Text(''),
                 GestureDetector(
                   onTap: () => calcular('<X'),
-                  child: const Text(
-                    '<X',
-                    style: TextStyle(fontSize: 48),
+                  child: Image.asset(
+                    'assets/images/arrow.png',
+                    width: 72,
                   ),
                 ),
               ],
@@ -301,7 +306,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ],
             ),
-            const Text('Coluna 6'),
+            const Text(''),
           ],
         ),
       ),
