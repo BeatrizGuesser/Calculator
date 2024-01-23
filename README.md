@@ -1,16 +1,14 @@
-# calculadora
+# Calculadora
 
-A new Flutter project.
+Meu primeiro projeto Mobile usando DART e FLUTTER.
 
-## Getting Started
+Este projeto foi feito para colocar em prática o que aprendi com as aulas de Dart e Flutter.
 
-This project is a starting point for a Flutter application.
+## Back-End
 
-A few resources to get you started if this is your first Flutter project:
+É uma calculadora básica que realiza as operações de soma, subtração, divisão e multiplicação, além de possuir as funcões de deletar e limpar.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Front-End
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Captura de Tela (2571)](https://github.com/BeatrizGuesser/Calculator/assets/137454124/906d391e-35c0-4e59-aca0-883079cabb25)
+
